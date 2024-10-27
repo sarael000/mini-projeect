@@ -1,0 +1,48 @@
+[
+    { "msgs": ["Hi hbiba diali，How are you feeling?？"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["Do you know how much I love you?"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["Yes", "Maybe", "No"],
+                "rejectKeyTexts": [],
+                "rejectHitTexts": [
+                    "Perfect :) I'd like to remind you that I love youu to the moon and back",
+                    "Error 404, sorry can't take that as an answer ( be a good girl o gouli ah :) )." ,
+                    ":/, andir rassi macheftch hadchi li ktebti o I'll move on"
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["fkhbark what I'm thinking about rn?"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["Idk", "Me"],
+                "rejectKeyTexts": ["Don't want to"],
+                "rejectHitTexts": [
+                    "well, you should know since I'm thinking about you dummy",
+                    "Exactlyy, see how smart my girl is :)"
+                ]
+            }
+        }
+    },
+    
+    { "msgs": ["What!! you don't believe it?"], "msgInputSpeed": 100 },
+    { "msgs": ["Ma3lina, since you're super cute I wanna give you a gift"], "msgInputSpeed": 140 },
+    { "msgs": ["You deserve it come oon look at how gorgeous you are 😭"], "msgInputSpeed": 180 },
+    { "msgs": ["O since I fucked up .... I wanted to give you this gift as an apologizing act ;)"], "msgInputSpeed": 80 },
+    { "msgs": ["O I want you to know bli I sincerely apologize for my act o I regret every inch of it <3"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["I hope you like it babe :)"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<letter src='options/preview/letter.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    }
+]

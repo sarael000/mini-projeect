@@ -1,0 +1,106 @@
+[
+    { "msgs": ["Normal message with input animation"], "msgInputSpeed": 80 },
+    { "msgs": ["Common messages can be rolled back, such as the following one"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["Normal messages will be rolled back", "The result of the rollback of normal messages can also be adjusted for animation speed"],
+        "msgInputSpeed": 80
+    },
+    { "msgs": ["Normal message input is fast"], "msgInputSpeed": 40 },
+    {
+        "msgs": ["Input roles can be switched"],
+        "msgInputSpeed": 80,
+        "author": "me"
+    },
+    {
+        "msgs": ["Messages support HTML elements, such as the colored text below"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<span style=\"color: red;\">Red span Label fonts</span>"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": [
+            "The message support triggers the user input interaction, and the user input of this message includes [good] to enter the next step, and it will be forcibly skipped many times"
+        ],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["Good"],
+                "rejectKeyTexts": [],
+                "rejectHitTexts": ["The input is good, don't you understand??? ", "Trigger a forcible skip"]
+            }
+        }
+    },
+    { "msgs": ["Messages support input of pictures"], "msgInputSpeed": 80 },
+    { "msgs": ["<img src='options/demo/imgs/test.png'/>"] },
+    { "msgs": ["Messages can be entered VLog"], "msgInputSpeed": 80 },
+    { "msgs": ["Look at what I did for you VLog"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<vlog src='options/demo/vlogs/test.mp4'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["Messages support the entry of letters"], "msgInputSpeed": 80 },
+    { "msgs": ["Look at what I want to say to you"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<letter src='options/demo/letters/test.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["Next up are some general tests"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["Do you want to hear something from your heart?"],
+        "msgInputSpeed": 40,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": [
+                    "Good",
+                    "OK",
+                    "Agree",
+                    "Willing",
+                    "Think",
+                    "I want to hear it",
+                    "Yes"
+                ],
+                "rejectKeyTexts": ["Don't want to"],
+                "rejectHitTexts": [
+                    "Don't listen? Believe it or not, I'll show you bugs every minute? ",
+                    "Well, since you really don't want to hear it, then I'll tell you about it"
+                ]
+            }
+        }
+    },
+    { "msgs": ["The words of my heart are in this letter"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<letter src='options/demo/letters/test.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    {
+        "msgs": ["Guess what I'm thinking?"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["Miss me"],
+                "rejectKeyTexts": ["I don't know"],
+                "rejectHitTexts": [
+                    "You guessed it wrong",
+                    ["I'll give you a hint~", "It's a person"],
+                    "None of this is true???",
+                    ["Well, look at the picture.", "<img src='options/demo/imgs/test.png'>"]
+                ]
+            }
+        }
+    },
+    { "msgs": ["I'm trying to play games", "I'm thinking about you"], "msgInputSpeed": 80 },
+    { "msgs": ["Check out this video"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<vlog src='options/demo/vlogs/test.mp4'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    {
+        "msgs": ["At the end of the test, the advertising space is rented"],
+        "msgInputSpeed": 80
+    }
+]
